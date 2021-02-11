@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>ÍøÒ×ÔÆÒôÀÖ</title>
-<link rel="stylesheet" type="text/css" href="//s5.music.126.net/static_public/5f040ccb0696071dab793a9d/outchain-base.css">
-<link rel="stylesheet" type="text/css" href="//s5.music.126.net/static_public/5f040ccb0696071dab793a9d/outchain-player.css">
+<title>ç½‘æ˜“äº‘éŸ³ä¹</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="base.css">
+<link rel="stylesheet" type="text/css" href="outchain-player.css">
 <style type="text/css">
 #player{margin:10px 0 0 10px;}
 </style>
@@ -33,7 +34,23 @@
 <div id="loading" class="loading f-hide"></div>
 </div>
 </div>
-</textarea>&nbsp;
+</textarea>
+<textarea name="txt" id="player-mid" style="display:none;"><div class="player player-mid f-cb f-pr">
+<div class="cover cover-sm f-pr">
+<img id="cover" src="//s4.music.126.net/style/web2/img/default/default_list.jpg?param=66y66"/>
+<div class="mask"></div>
+<div id="play" class="bg play-bg" data-action="play"></div>
+<div id="pause" class="bg pause-bg f-hide" data-action="pause"></div>
+</div>
+<div id="mid-ctrl" class="ctrlBox">
+<h2 class="f-pr"><i data-action="home" class="bg logo"></i><div id="title" class="title"></div></h2>
+<div id="bar" class="bar">
+<div class="played j-flag"><span class="bg thumb j-flag"></span></div>
+</div>
+</div>
+<span id="time" class="time">- 00:00</span>
+</div>
+</textarea>
 <textarea name="txt" id="player-bg" style="display:none;"><div class="player">
 <div class="f-cb">
 <div class="cover">
@@ -88,8 +105,8 @@
 </div>
 <div data-action="home" class="foot">
 <div class="bg logo"></div>
-<div class="yyy">ÍøÒ×ÔÆÒôÀÖ</div>
-<div class="slogan">4300ÍòÇú¿â Ê×Ê×CDÒôÖÊ</div>
+<div class="yyy">ç½‘æ˜“äº‘éŸ³ä¹</div>
+<div class="slogan">500ä¸‡æ›²åº“ é¦–é¦–CDéŸ³è´¨</div>
 </div>
 </div>
 </div>
@@ -116,13 +133,13 @@ ${a.name}
 {/list}
 </textarea>
 </div>
-<script src="//s3.music.126.net/web/s/core_68ac1b3aadf40a20caba599a0ab2365d.js?68ac1b3aadf40a20caba599a0ab2365d" type="text/javascript"></script><script src="//s3.music.126.net/web/s/pt_outchain_player_c01f519eac891510d509d80e5d62ec57.js?c01f519eac891510d509d80e5d62ec57" type="text/javascript"></script>
+<script src="//s3.music.126.net/web/s/core_172d3506fd39688f1606102abb4500af.js?172d3506fd39688f1606102abb4500af" type="text/javascript"></script><script src="//s3.music.126.net/web/s/pt_outchain_player_5437bf86a729640aabfd289f187b4d83.js?5437bf86a729640aabfd289f187b4d83" type="text/javascript"></script>
 </body>
 <script type="text/javascript">
 var _gaq=_gaq||[];
 _gaq.push(['_setAccount','UA-38766552-1'],['_setLocalGifPath','/UA-38766552-1/__utm.gif'],['_setLocalRemoteServerMode']);
 _gaq.push(['_trackPageview']);
-//fix ipadÏÂµÄÒ»¸öbug
+//fix ipadä¸‹çš„ä¸€ä¸ªbug
 if (navigator.userAgent.indexOf('iPad') != -1) {
 iframeHeight = Math.max(
 Math.max(document.body.scrollHeight, document.documentElement.scrollHeight),
@@ -130,6 +147,7 @@ Math.max(document.body.offsetHeight, document.documentElement.offsetHeight),
 Math.max(document.body.clientHeight, document.documentElement.clientHeight)
 );
 top.document.body.style.height = iframeHeight + 20 + 'px';
-}
-</script>
+}</script>
+<p>&nbsp;</p>
+
 </html>
